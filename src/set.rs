@@ -49,7 +49,7 @@ type Bucket<T> = super::Bucket<T, ()>;
 /// # Examples
 ///
 /// ```
-/// use indexmap_rmw::IndexSet;
+/// use indexmap::IndexSet;
 ///
 /// // Collects which letters appear in a sentence.
 /// let letters: IndexSet<_> = "a short treatise on fungi".chars().collect();
@@ -655,7 +655,7 @@ impl<T, S> IndexSet<T, S> {
 /// # Examples
 ///
 /// ```
-/// use indexmap_rmw::IndexSet;
+/// use indexmap::IndexSet;
 ///
 /// let mut set = IndexSet::new();
 /// for word in "Lorem ipsum dolor sit amet".split_whitespace() {
@@ -672,7 +672,7 @@ impl<T, S> IndexSet<T, S> {
 /// ```
 ///
 /// ```should_panic
-/// use indexmap_rmw::IndexSet;
+/// use indexmap::IndexSet;
 ///
 /// let mut set = IndexSet::new();
 /// set.insert("foo");

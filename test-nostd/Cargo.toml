@@ -6,6 +6,6 @@ publish = false
 edition = "2018"
 
 [dependencies]
-indexmap = { path = "..", features = ["serde-1"] }
+indexmap-rmw = { path = "..", features = ["serde-1"] }
 
 [dev-dependencies]

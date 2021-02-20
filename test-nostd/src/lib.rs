@@ -4,8 +4,8 @@ use core::hash::BuildHasherDefault;
 use core::hash::Hasher;
 use core::iter::FromIterator;
 
-use indexmap_rmw::IndexMap;
-use indexmap_rmw::IndexSet;
+use indexmap::IndexMap;
+use indexmap::IndexSet;
 
 #[derive(Default)]
 struct BadHasher(u64);

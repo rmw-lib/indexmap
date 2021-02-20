@@ -8,11 +8,11 @@
 //! This module may be used in a field attribute for derived implementations:
 //!
 //! ```
-//! # use indexmap_rmw::IndexMap;
+//! # use indexmap::IndexMap;
 //! # use serde_derive::{Deserialize, Serialize};
 //! #[derive(Deserialize, Serialize)]
 //! struct Data {
-//!     #[serde(with = "indexmap_rmw::serde_seq")]
+//!     #[serde(with = "indexmap::serde_seq")]
 //!     map: IndexMap<i32, u64>,
 //!     // ...
 //! }
@@ -34,11 +34,11 @@ use crate::IndexMap;
 /// This function may be used in a field attribute for deriving `Serialize`:
 ///
 /// ```
-/// # use indexmap_rmw::IndexMap;
+/// # use indexmap::IndexMap;
 /// # use serde_derive::Serialize;
 /// #[derive(Serialize)]
 /// struct Data {
-///     #[serde(serialize_with = "indexmap_rmw::serde_seq::serialize")]
+///     #[serde(serialize_with = "indexmap::serde_seq::serialize")]
 ///     map: IndexMap<i32, u64>,
 ///     // ...
 /// }
@@ -90,11 +90,11 @@ where
 /// This function may be used in a field attribute for deriving `Deserialize`:
 ///
 /// ```
-/// # use indexmap_rmw::IndexMap;
+/// # use indexmap::IndexMap;
 /// # use serde_derive::Deserialize;
 /// #[derive(Deserialize)]
 /// struct Data {
-///     #[serde(deserialize_with = "indexmap_rmw::serde_seq::deserialize")]
+///     #[serde(deserialize_with = "indexmap::serde_seq::deserialize")]
 ///     map: IndexMap<i32, u64>,
 ///     // ...
 /// }

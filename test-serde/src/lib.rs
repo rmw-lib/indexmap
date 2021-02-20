@@ -1,7 +1,7 @@
 #![cfg(test)]
 
 use fnv::FnvBuildHasher;
-use indexmap_rmw::{indexmap, indexset, IndexMap, IndexSet};
+use indexmap::{indexmap, indexset, IndexMap, IndexSet};
 use serde::{Deserialize, Serialize};
 use serde_test::{assert_tokens, Token};
 
@@ -77,7 +77,7 @@ fn test_serde_seq_map() {
     #[derive(Debug, Deserialize, Serialize)]
     #[serde(transparent)]
     struct SeqIndexMap {
-        #[serde(with = "indexmap_rmw::serde_seq")]
+        #[serde(with = "indexmap::serde_seq")]
         map: IndexMap<i32, i32>,
     }
 

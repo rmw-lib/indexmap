@@ -36,7 +36,7 @@
 //! ```
 //! use fnv::FnvBuildHasher;
 //! use fxhash::FxBuildHasher;
-//! use indexmap_rmw::{IndexMap, IndexSet};
+//! use indexmap::{IndexMap, IndexSet};
 //!
 //! type FnvIndexMap<K, V> = IndexMap<K, V, FnvBuildHasher>;
 //! type FnvIndexSet<T> = IndexSet<T, FnvBuildHasher>;

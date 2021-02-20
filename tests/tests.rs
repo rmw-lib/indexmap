@@ -1,4 +1,4 @@
-use indexmap_rmw::{indexmap, indexset};
+use indexmap::{indexmap, indexset};
 
 #[test]
 fn test_sort() {
