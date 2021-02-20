@@ -1,5 +1,5 @@
-use indexmap::indexmap;
-use indexmap::Equivalent;
+use indexmap_rmw::indexmap;
+use indexmap_rmw::Equivalent;
 
 use std::hash::Hash;
 

@@ -1,5 +1,5 @@
 [package]
-name = "indexmap"
+name = "indexmap-rmw"
 edition = "2018"
 version = "1.6.1"
 authors = [
@@ -7,7 +7,7 @@ authors = [
 "Josh Stone <cuviper@gmail.com>"
 ]
 documentation = "https://docs.rs/indexmap/"
-repository = "https://github.com/bluss/indexmap"
+repository = "https://github.com/rmw-lib/indexmap"
 license = "Apache-2.0/MIT"
 description = """
 A hash table with consistent order and fast iteration.

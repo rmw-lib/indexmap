@@ -54,7 +54,7 @@ pub use self::core::{Entry, OccupiedEntry, VacantEntry};
 /// # Examples
 ///
 /// ```
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// // count the frequency of each letter in a sentence.
 /// let mut letters = IndexMap::new();
@@ -1057,7 +1057,7 @@ impl<K, V, S> IntoIterator for IndexMap<K, V, S> {
 /// # Examples
 ///
 /// ```
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// let mut map = IndexMap::new();
 /// for word in "Lorem ipsum dolor sit amet".split_whitespace() {
@@ -1068,7 +1068,7 @@ impl<K, V, S> IntoIterator for IndexMap<K, V, S> {
 /// ```
 ///
 /// ```should_panic
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// let mut map = IndexMap::new();
 /// map.insert("foo", 1);
@@ -1100,7 +1100,7 @@ where
 /// # Examples
 ///
 /// ```
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// let mut map = IndexMap::new();
 /// for word in "Lorem ipsum dolor sit amet".split_whitespace() {
@@ -1113,7 +1113,7 @@ where
 /// ```
 ///
 /// ```should_panic
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// let mut map = IndexMap::new();
 /// map.insert("foo", 1);
@@ -1138,7 +1138,7 @@ where
 /// # Examples
 ///
 /// ```
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// let mut map = IndexMap::new();
 /// for word in "Lorem ipsum dolor sit amet".split_whitespace() {
@@ -1155,7 +1155,7 @@ where
 /// ```
 ///
 /// ```should_panic
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// let mut map = IndexMap::new();
 /// map.insert("foo", 1);
@@ -1184,7 +1184,7 @@ impl<K, V, S> Index<usize> for IndexMap<K, V, S> {
 /// # Examples
 ///
 /// ```
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// let mut map = IndexMap::new();
 /// for word in "Lorem ipsum dolor sit amet".split_whitespace() {
@@ -1197,7 +1197,7 @@ impl<K, V, S> Index<usize> for IndexMap<K, V, S> {
 /// ```
 ///
 /// ```should_panic
-/// use indexmap::IndexMap;
+/// use indexmap_rmw::IndexMap;
 ///
 /// let mut map = IndexMap::new();
 /// map.insert("foo", 1);
