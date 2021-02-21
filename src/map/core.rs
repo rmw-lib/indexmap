@@ -22,7 +22,7 @@ use crate::util::{enumerate, simplify_range};
 use crate::{Bucket, Entries, HashValue};
 
 /// Core of the map that does not depend on S
-pub(crate) struct IndexMapCore<K, V> {
+pub struct IndexMapCore<K, V> {
     /// indices mapping from the entry hash to its index.
     indices: RawTable<usize>,
     /// entries is a dense vec of entries in their order.
