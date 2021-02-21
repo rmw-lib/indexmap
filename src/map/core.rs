@@ -166,7 +166,7 @@ impl<K, V> IndexMapCore<K, V> {
         self.entries.drain(range)
     }
 
-    pub(crate) fn split_off(&mut self, at: usize) -> Self {
+    pub fn split_off(&mut self, at: usize) -> Self {
         assert!(at <= self.entries.len());
         self.erase_indices(at, self.entries.len());
         let entries = self.entries.split_off(at);
